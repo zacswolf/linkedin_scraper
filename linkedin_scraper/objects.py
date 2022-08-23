@@ -58,7 +58,7 @@ class Scraper:
 
     def is_signed_in(self):
         try:
-            self.driver.find_element_by_id(c.VERIFY_LOGIN_ID)
+            self.driver.find_element("id", c.VERIFY_LOGIN_ID)
             return True
         except:
             pass
